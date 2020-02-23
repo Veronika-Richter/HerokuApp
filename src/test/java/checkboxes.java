@@ -1,10 +1,12 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class checkboxes {
 
+    @Test
     public void checkBoxesTest(){
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();

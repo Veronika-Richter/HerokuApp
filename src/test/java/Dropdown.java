@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,6 +10,7 @@ import static org.testng.Assert.assertEquals;
 
 public class Dropdown {
 
+    @Test
     public void dropdownTest() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
